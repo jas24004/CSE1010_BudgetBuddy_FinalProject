@@ -34,7 +34,7 @@ print(financial_status(balance))
 save_expenses(budget.expenses)
 print("\nExpenses saved to file.")
 
-# Step 7: Optional visualization
+# Step 7: Visualization
 if budget.expenses:
     categories = [cat for cat, _ in budget.expenses]
     amounts = [cost for _, cost in budget.expenses]
@@ -43,3 +43,4 @@ if budget.expenses:
     plt.title("Monthly Expenses")
     plt.ylabel("Amount ($)")
     plt.show()
+
